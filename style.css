@@ -19,7 +19,7 @@
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin: 100px auto 20px;
-    padding: 40px 30px 70px;
+    padding: 40px 40px 70px;
 }
 
 .todo-list h2 {
@@ -43,7 +43,7 @@
     margin-bottom: 20px;
     background: #edeef0;
     border-radius: 30px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 input {
@@ -115,27 +115,36 @@ ul li span:hover {
     background: #edeef0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 390px) {
     .todo-list {
-        padding: 20px 10px 50px;
+        padding: 20px 8px 50px;
     }
 
-    .row {
-        padding-left: 10px;
-    }
-
-    input {
-        padding: 8px;
+    .todo-list h2 img {
+        display: none;
     }
 
     ul li {
-        padding: 10px 8px 10px 40px;
+        padding: 15px 8px 5px 60px;
+    }
+
+    #input-box,#add-btn {
+        padding: 8px;
     }
 
     ul li span {
+        top: 10px;
+        padding-left: 20px;
         width: 30px;
         height: 30px;
-        font-size: 18px;
+        font-size: 15px;
         line-height: 30px;
+        text-align: center;
+        padding-left: 10px;
     }
+
+    #list-container {
+        margin-top: 20px;
+    }
+
 }
