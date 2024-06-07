@@ -114,3 +114,26 @@ ul li span{
 ul li span:hover{
     background: #edeef0;
 }
+
+
+@media screen and (max-width: 768px) {
+    .todo-list {
+        padding: 40px 20px 70px;
+    }
+
+    .row {
+        padding-left: 10px;
+    }
+
+    ul li {
+        padding: 12px 8px 12px 40px;
+    }
+
+    ul li span {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+}
